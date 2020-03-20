@@ -16,7 +16,7 @@ export default {
     return {
       date: '',
       options: {
-        speed: 2, // 速度
+        speed: 1, // 速度
         speedMax: 10, // 速度最大值
       },
       interval: 200, // 日期间的间隔

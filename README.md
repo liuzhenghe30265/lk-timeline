@@ -2,11 +2,26 @@
 
 > 基于 Vue 开发的带播放功能的时间轴插件
 
+![](https://tva1.sinaimg.cn/large/00831rSTly1gd06qlr8rgg31ao06sdqr.gif)
+
+[github 地址](https://github.com/liuzhenghe30265/lk-timeline)
+
+
+# Demo
+
+
+# Install
+
+From npm:
 ```
 npm install lk-timeline --save
 ```
 
-[github 地址](https://github.com/liuzhenghe30265/lk-timeline)
+# Usage
+
+## 全局使用
+
+## 组件内使用
 
 ```
 <template>
