@@ -4,10 +4,12 @@
       style="margin:0;text-align:center;">
       {{this.date}}
     </h2>
-    <Main :options="options"
+    <Main
+      :options="options"
       :dateTimes="dateTimes"
       @getDateFun="getDateFun"
-      :interval="interval"></Main>
+      :interval="interval">
+    </Main>
   </div>
 </template>
 

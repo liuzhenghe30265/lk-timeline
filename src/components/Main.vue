@@ -1,24 +1,33 @@
 <template>
-  <div class="timeline-main">
-    <div class="timeline-axis">
-      <div class="axis-item"
+  <div
+    class="timeline-main">
+    <div
+      class="timeline-axis">
+      <div
+        class="axis-item"
         v-for="(time, index) in dateTimes"
         :key="index">
-        <div class="axis-item-tick"
+        <div
+          class="axis-item-tick"
           :class="{ 'axis-item-tick-active': index === highlightIndex }"
           @mouseenter="hoverIndex = index"
           @mouseleave="hoverIndex = -1"
           @click="tickClick(time, index)">
         </div>
-        <div class="axis-item-label"
+        <div
+          class="axis-item-label"
           v-if="dateTimeIndexes.indexOf(index) >= 0">
-          {{ time }}</div>
-        <div class="axis-item-tip"
+          {{ time }}
+        </div>
+        <div
+          class="axis-item-tip"
           v-if="index === highlightIndex || index === hoverIndex">
-          {{ time }}</div>
+          {{ time }}
+        </div>
       </div>
     </div>
-    <div class="timeline-control">
+    <div
+      class="timeline-control">
       <i class="menu-icon icon-left"
         :class="{'menu-icon-disabled': playing}"
         @click="backward"></i>
@@ -43,6 +52,7 @@
 <script>
 import { dateFormat } from '../util/formatdate.js' // 日期格式化
 export default {
+  name: 'lk-timeline',
   data() {
     return {
       intervalTimer: null, // 定时器
