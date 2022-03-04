@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div
+    class="main">
     <h2
       style="margin:0;text-align:center;">
       {{this.date}}
@@ -18,7 +19,7 @@ import { dateFormat } from './util/formatdate.js'
 import Main from './components/Main'
 export default {
   name: 'app',
-  data() {
+  data () {
     return {
       date: '',
       options: {
@@ -43,7 +44,7 @@ export default {
   components: {
     Main
   },
-  mounted() {
+  mounted () {
     // 获取最近 10 天的日期
     let list = []
     for (let i = 0; i < 10; i++) {
@@ -61,10 +62,18 @@ export default {
   },
   methods: {
     // 接收父组件传值
-    getDateFun(time) {
+    getDateFun (time) {
       console.log(time)
       this.date = time
     },
   }
 }
 </script>
+<style lang="scss" scoped>
+.main {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+</style>

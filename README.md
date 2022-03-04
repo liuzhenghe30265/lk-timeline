@@ -1,12 +1,14 @@
 # 带播放功能的时间轴
 
+![](https://tva1.sinaimg.cn/large/0081Kckwly1gl4ocsndfbj31nw0r2n1k.jpg)
+
 [![npm](https://img.shields.io/badge/npm-6.4.1-brightgreen.svg)](https://www.npmjs.com/)
 [![webpack](https://img.shields.io/badge/webpack-^3.6.0-brightgreen.svg)](https://github.com/webpack/webpack)
 [![vue](https://img.shields.io/badge/vue-^2.5.11-brightgreen.svg)](https://github.com/vuejs/)
 
-![](https://tva1.sinaimg.cn/large/0081Kckwly1gl4ocsndfbj31nw0r2n1k.jpg)
-
 [Demo](https://liuzhenghe30265.github.io/lk-timeline/)
+
+[Github](https://github.com/liuzhenghe30265/dialog-demo.git)
 
 ## 📦 Install
 
